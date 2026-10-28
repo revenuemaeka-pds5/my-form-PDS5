@@ -77,7 +77,7 @@ const T={
  build:{t:'สิ่งปลูกสร้าง',u:'หลัง',f:[...AD,['deed','บนที่ดินเลขที่โฉนด/หนังสือสำคัญ'],['area','ขนาดพื้นที่ (ตร.ม.)','number'],...USE]},
  condo:{t:'อาคารชุด/ห้องชุด',u:'ห้อง',f:[['cname','ชื่ออาคารชุด/ห้องชุด','w'],['room','เลขที่/ห้องที่'],...AD,['deed','บนที่ดินเลขที่โฉนด/หนังสือสำคัญ'],['area','ขนาดพื้นที่ (ตร.ม.)','number'],...USE]}
 };
-const fresh=()=>({place:'องค์การบริหารส่วนตำบลเวียงท่ากาน',date:'',name:'',house:'',moo:'',road:'',tambon:'',amphoe:'',province:'',land:[{}],build:[{}],condo:[{}],sig:'',oname:'',opos:''});
+const fresh=()=>({place:'องค์การบริหารส่วนตำบล',date:'',name:'',house:'',moo:'',road:'',tambon:'',amphoe:'',province:'',land:[{}],build:[{}],condo:[{}],sig:'',oname:'',opos:''});
 let s=fresh();
 const $=id=>document.getElementById(id);
 const esc=x=>String(x??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
